@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="shortcut icon" href="Imagens/calculate.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JS/script.js"></script>
+
+</head>
+<body>
+
+    <div class="container-back">
+
+        <div class="container-calc">
+            <h1>Calculadora</h1>
+            <p id="result"></p>
+            <table>
+                <tr>
+                    <td colspan="2" ><button class="botao-calc" onclick="limpar()" style="color: #330281; width: 90%;">C</button></td>
+                    <td><button class="botao-calc" onclick="backspace()"><</button></td>
+                    <td><button class="botao-calc-op" onclick="insere('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao-calc" onclick="insere('7')">7</button></td>
+                    <td><button class="botao-calc" onclick="insere('8')">8</button></td>
+                    <td><button class="botao-calc" onclick="insere('9')">9</button></td>
+                    <td><button class="botao-calc-op" onclick="insere('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao-calc" onclick="insere('4')">4</button></td>
+                    <td><button class="botao-calc" onclick="insere('5')">5</button></td>
+                    <td><button class="botao-calc" onclick="insere('6')">6</button></td>
+                    <td><button class="botao-calc-op" onclick="insere('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao-calc" onclick="insere('1')">1</button></td>
+                    <td><button class="botao-calc" onclick="insere('2')">2</button></td>
+                    <td><button class="botao-calc" onclick="insere('3')">3</button></td>
+                    <td><button class="botao-calc-op" onclick="insere('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao-calc" onclick="altera()">±</button></td>
+                    <td><button class="botao-calc" onclick="insere('0')">0</button></td>
+                    <td><button class="botao-calc" onclick="insere('.')">.</button></td>
+                    <td><button class="botao-calc"style="background: #8a7ecea4;" onclick="calcular()">=</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p>Desenvolvido por Beets Jr.&trade;</p>
+        </footer>
+    </div>
+    
+
+</body>
+</html>
